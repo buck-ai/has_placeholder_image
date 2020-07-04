@@ -1,0 +1,5 @@
+Naming/PredicateName:
+  Enabled: false
+
+Style/ClassVars:
+  Enabled: false
