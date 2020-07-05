@@ -6,6 +6,9 @@ Style/ClassVars:
 
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'test/dummy/db/**/*'
 
 Style/Documentation:
   Enabled: false
+
