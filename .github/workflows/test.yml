@@ -50,4 +50,4 @@ jobs:
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3 --deployment
       - name: Run
-        run: bundle exec bin/test --no-plugins
+        run: bundle exec bin/test
