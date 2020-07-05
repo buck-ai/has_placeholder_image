@@ -1,4 +1,6 @@
 # HasPlaceholderImage
+![Test](https://github.com/buck-ai/has-placeholder-image/workflows/Test/badge.svg)
+
 Short description and motivation.
 
 ## Usage
