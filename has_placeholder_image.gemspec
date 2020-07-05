@@ -12,8 +12,8 @@ Gem::Specification.new do |spec|
   spec.authors     = ['Muhammet Dilmaç']
   spec.email       = ['iletisim@muhammetdilmac.com.tr']
   spec.homepage    = 'https://www.github.com/buck-ai/has-placeholder-image'
-  spec.summary     = 'Summary of HasPlaceholderImage.'
-  spec.description = 'Description of HasPlaceholderImage.'
+  spec.summary     = 'A Ruby gem for generating string based placeholder images in Rails.'
+  spec.description = 'Has Placeholder Image is a Ruby on Rails gem that allows developers to generate placeholder images for models depending on the title or name attributes of model.'
   spec.license     = 'MIT'
 
   spec.files = Dir['lib/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
