@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HasPlaceholderImage
   class Railtie < ::Rails::Railtie
     initializer 'has_placeholder_image.initialize' do |app|

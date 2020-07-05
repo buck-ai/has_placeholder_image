@@ -3,3 +3,9 @@ Naming/PredicateName:
 
 Style/ClassVars:
   Enabled: false
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false

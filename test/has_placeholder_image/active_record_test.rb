@@ -29,5 +29,13 @@ module HasPlaceholderImage
 
       assert_equal human.photo.attached?, true
     end
+
+    test 'Is it work custom source and target configuration?' do
+      company = Company.new
+      company.title = 'Buck AI'
+      company.save
+
+      assert_equal company.logo.attached?, true
+    end
   end
 end

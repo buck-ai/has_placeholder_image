@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module HasPlaceholderImage
   module ActiveRecord
     extend ActiveSupport::Concern
