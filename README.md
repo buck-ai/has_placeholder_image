@@ -45,7 +45,7 @@ has_placeholder_image source: :title,
 HasPlaceholderImage.setup do |config|
   config.background_color = '#000000'
   config.font_color = '#FFFFFF'
-  config.font_size = 50
+  config.font_size = 200
   config.transformer = 'two_word_first_letter_upcase'
   config.source = 'name'
   config.target = 'photo'
@@ -76,7 +76,7 @@ class Company < ApplicationRecord
   has_one_attached :logo
   has_placeholder_image source: :title, target: :logo,
                         background_color: '#335eea',
-			font_size: 200
+			            font_size: 200
 
   validates :title, presence: true
 end
