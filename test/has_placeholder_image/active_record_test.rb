@@ -9,15 +9,15 @@ module HasPlaceholderImage
     end
 
     test 'has_placeholder_image is exist?' do
-      assert_includes Human.singleton_methods, :has_placeholder_image
+      assert_includes Person.singleton_methods, :has_placeholder_image
     end
 
     test "If don't have image create placeholder" do
-      human = Human.new
-      human.name = 'Foo Bar'
-      human.save
+      person = Person.new
+      person.name = 'Foo Bar'
+      person.save
 
-      assert_equal human.photo.attached?, true
+      assert_equal person.photo.attached?, true
     end
 
     test 'Is it work custom source and target configuration?' do
@@ -28,8 +28,8 @@ module HasPlaceholderImage
       assert_equal company.logo.attached?, true
     end
 
-    test 'Human module options are default?' do
-      assert_equal Human.placeholder_image_options, HasPlaceholderImage.default_options
+    test 'Person model options are default?' do
+      assert_equal Person.placeholder_image_options, HasPlaceholderImage.default_options
     end
 
     test 'Company module options are modified?' do
