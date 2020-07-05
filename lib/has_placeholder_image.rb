@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require 'has_placeholder_image/railtie' if defined?(Rails)
-require 'has_placeholder_image/text_generator'
-require 'has_placeholder_image/image_generator'
-
 # HasPlaceholderImage Plugin
 module HasPlaceholderImage
+  autoload :ActiveRecord,   'has_placeholder_image/active_record'
+  autoload :TextGenerator,  'has_placeholder_image/text_generator'
+  autoload :ImageGenerator, 'has_placeholder_image/image_generator'
+
   mattr_accessor :background_color
   @background_color = '#000000'
 
@@ -48,3 +48,5 @@ module HasPlaceholderImage
     yield self
   end
 end
+
+require 'has_placeholder_image/railtie'
