@@ -1,5 +1,9 @@
 # HasPlaceholderImage
 ![Test](https://github.com/buck-ai/has-placeholder-image/workflows/Test/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/d7ff2ca5f9ceb238c353/maintainability)](https://codeclimate.com/github/buck-ai/has_placeholder_image/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d7ff2ca5f9ceb238c353/test_coverage)](https://codeclimate.com/github/buck-ai/has_placeholder_image/test_coverage)
+[![Gem Version](https://badge.fury.io/rb/has_placeholder_image.svg)](https://badge.fury.io/rb/has_placeholder_image)
+
 
 Has Placeholder Image is a Ruby on Rails gem that allows developers to generate placeholder images for models depending on the title or name attributes of model.
 
