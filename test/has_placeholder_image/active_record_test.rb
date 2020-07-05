@@ -21,5 +21,13 @@ module HasPlaceholderImage
       human.name = 'Foo Bar'
       assert_equal human.placeholder_image_options, HasPlaceholderImage.default_options
     end
+
+    test "If don't have image create placeholder" do
+      human = Human.new
+      human.name = 'Foo Bar'
+      human.save
+
+      assert_equal human.photo.attached?, true
+    end
   end
 end
