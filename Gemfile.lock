@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     has_placeholder_image (0.1.0)
-      rails (~> 6.0.0, >= 6.0.0)
+      rails (>= 5.0.0)
       rmagick
 
 GEM
