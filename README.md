@@ -5,7 +5,7 @@
 [![Gem Version](https://badge.fury.io/rb/has_placeholder_image.svg)](https://badge.fury.io/rb/has_placeholder_image)
 
 
-Has Placeholder Image is a Ruby on Rails gem that allows developers to generate placeholder images for models that has ActiveStorage fields.
+Has Placeholder Image is a Ruby on Rails plugin that allows developers to generate placeholder images for models that has ActiveStorage fields.
 
 ## Installation
 Add this line to your application's Gemfile:
