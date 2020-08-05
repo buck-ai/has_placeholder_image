@@ -2,9 +2,10 @@
 
 # HasPlaceholderImage Plugin
 module HasPlaceholderImage
-  autoload :ActiveRecord,   'has_placeholder_image/active_record'
-  autoload :TextGenerator,  'has_placeholder_image/text_generator'
-  autoload :ImageGenerator, 'has_placeholder_image/image_generator'
+  autoload :ActiveRecord,     'has_placeholder_image/active_record'
+  autoload :TextGenerator,    'has_placeholder_image/text_generator'
+  autoload :ImageGenerator,   'has_placeholder_image/image_generator'
+  autoload :ImageGenerateJob, 'has_placeholder_image/image_generate_job'
 
   mattr_accessor :background_color
   @background_color = '#000000'

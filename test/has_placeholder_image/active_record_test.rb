@@ -4,6 +4,8 @@ require 'test_helper'
 
 module HasPlaceholderImage
   class ActiveRecordTest < ActiveSupport::TestCase
+    include ActiveJob::TestHelper
+
     test 'truth' do
       assert_kind_of Module, HasPlaceholderImage::ActiveRecord
     end
@@ -17,6 +19,10 @@ module HasPlaceholderImage
       person.name = 'Foo Bar'
       person.save
 
+      ImageGenerateJob.perform_now(source_class: person.class.name,
+                                   id: person.id,
+                                   options: person.class.placeholder_image_options)
+      person.reload
       assert_equal person.photo.attached?, true
     end
 
@@ -25,6 +31,10 @@ module HasPlaceholderImage
       company.title = 'Buck AI'
       company.save
 
+      ImageGenerateJob.perform_now(source_class: company.class.name,
+                                   id: company.id,
+                                   options: company.class.placeholder_image_options)
+      company.reload
       assert_equal company.logo.attached?, true
     end
 

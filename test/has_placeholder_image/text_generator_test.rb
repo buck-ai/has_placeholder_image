@@ -19,25 +19,18 @@ module HasPlaceholderImage
       assert_equal 'FB', result
     end
 
-    test 'two_word_first_letter_upcase method delimiter parameter working correct?' do
-      text = 'Foo|Bar'
-      result = HasPlaceholderImage::TextGenerator.two_word_first_letter_upcase(text, delimiter: '|')
+    test 'two_word_first_letter_upcase method working without symbols?' do
+      text = 'Foo / Bar'
+      result = HasPlaceholderImage::TextGenerator.two_word_first_letter_upcase(text)
 
       assert_equal 'FB', result
     end
 
-    test 'two_word_first_letter_upcase method word_count parameter working correct?' do
-      text = 'Foo Bar Baz'
-      result = HasPlaceholderImage::TextGenerator.two_word_first_letter_upcase(text, word_count: 1)
+    test 'two_word_first_letter_upcase method working with one word?' do
+      text = 'Foo'
+      result = HasPlaceholderImage::TextGenerator.two_word_first_letter_upcase(text)
 
       assert_equal 'F', result
-    end
-
-    test 'two_word_first_letter_upcase method all parameter working correct?' do
-      text = 'Foo|Bar|Baz'
-      result = HasPlaceholderImage::TextGenerator.two_word_first_letter_upcase(text, delimiter: '|', word_count: 3)
-
-      assert_equal 'FBB', result
     end
   end
 end
