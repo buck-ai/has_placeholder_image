@@ -54,7 +54,7 @@ HasPlaceholderImage.setup do |config|
   config.transformer = 'two_word_first_letter_upcase'
   config.source = 'name'
   config.target = 'photo'
-  config.output_path = Rails.root.join('tmp/placeholders')
+  config.output_path = 'tmp/placeholders'
   config.height = 300
   config.width = 300
 end
