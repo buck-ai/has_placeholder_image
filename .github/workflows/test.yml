@@ -1,5 +1,7 @@
 name: Test
 
+on: push
+
 jobs:
   Rubocop:
     runs-on: ubuntu-latest
