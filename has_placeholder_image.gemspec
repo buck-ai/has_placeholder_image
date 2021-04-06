@@ -23,5 +23,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'rmagick'
 
   spec.add_development_dependency 'rubocop'
+  spec.add_development_dependency 'simplecov', '0.17'
   spec.add_development_dependency 'sqlite3'
 end
