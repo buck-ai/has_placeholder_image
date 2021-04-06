@@ -35,7 +35,7 @@ jobs:
         with:
           ruby-version: 2.6.0
       - name: Install system dependencies
-        run: sudo apt-get update && sudo apt-get -yqq install libsqlite3-dev sqlite3
+        run: sudo apt-get update && sudo apt-get -yqq install libsqlite3-dev sqlite3 ghostscript
       - name: Cache ruby gems
         uses: actions/cache@v2
         env:
