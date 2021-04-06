@@ -48,4 +48,6 @@ jobs:
       - name: Install dependencies
         run: bundle install --jobs 4 --retry 3 --deployment
       - name: Run
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
         run: bundle exec bin/test
